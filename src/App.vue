@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterView } from 'vue-router';
 import MainNavbar from './components/MainNavbar.vue';
 </script>
 
 <template>
   <MainNavbar />
-  <div>
-    
+  <!-- TODO: Remove color before deploy -->
+  <div class="min-h-screen h-fit bg-red-400">
+    <RouterView />
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
